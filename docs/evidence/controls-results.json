@@ -1,0 +1,111 @@
+{
+  "experiment" : "DISC-04 offscreen first viewport",
+  "limitations" : [
+    "offscreen layout and bitmap drawing",
+    "synthetic history rows",
+    "excludes Git retrieval",
+    "excludes interaction and VoiceOver",
+    "same-process warm trials",
+    "whole-process memory measured externally"
+  ],
+  "os" : "Version 27.0.1 (Build 26A434)",
+  "physical_memory_bytes" : 51539607552,
+  "results" : [
+    {
+      "case" : "AppKit NSTextView \/ large-diff",
+      "first_ms" : 347.61195833561942,
+      "max_ms" : 376.92479166435078,
+      "p50_ms" : 349.5100416475907,
+      "p95_ms" : 374.35554165858775,
+      "trials" : 20
+    },
+    {
+      "case" : "SwiftUI LazyVStack \/ large-diff",
+      "first_ms" : 21.806416683830321,
+      "max_ms" : 21.806416683830321,
+      "p50_ms" : 14.243499957956374,
+      "p95_ms" : 19.473708351142704,
+      "trials" : 20
+    },
+    {
+      "case" : "AppKit NSTextView \/ large-diff \/ 200-line page",
+      "first_ms" : 22.264208295382559,
+      "max_ms" : 27.537833317182958,
+      "p50_ms" : 21.367750014178455,
+      "p95_ms" : 26.95458335801959,
+      "trials" : 20
+    },
+    {
+      "case" : "AppKit NSTextView \/ unicode-diff",
+      "first_ms" : 857.76208329480141,
+      "max_ms" : 1271.4882916770875,
+      "p50_ms" : 874.52379165915772,
+      "p95_ms" : 1265.9749583108351,
+      "trials" : 20
+    },
+    {
+      "case" : "SwiftUI LazyVStack \/ unicode-diff",
+      "first_ms" : 18.367208307608962,
+      "max_ms" : 24.952291685622185,
+      "p50_ms" : 14.215583330951631,
+      "p95_ms" : 20.391000027302653,
+      "trials" : 20
+    },
+    {
+      "case" : "AppKit NSTextView \/ unicode-diff \/ 200-line page",
+      "first_ms" : 29.8206249717623,
+      "max_ms" : 38.365749991498888,
+      "p50_ms" : 31.390541698783636,
+      "p95_ms" : 36.425291677005589,
+      "trials" : 20
+    },
+    {
+      "case" : "AppKit NSTextView \/ renamed-diff",
+      "first_ms" : 17.098999989684671,
+      "max_ms" : 30.034958326723427,
+      "p50_ms" : 15.948124986607581,
+      "p95_ms" : 22.069708327762783,
+      "trials" : 20
+    },
+    {
+      "case" : "SwiftUI LazyVStack \/ renamed-diff",
+      "first_ms" : 7.1919999900273979,
+      "max_ms" : 9.9647499737329781,
+      "p50_ms" : 6.7116667050868273,
+      "p95_ms" : 8.258416666649282,
+      "trials" : 20
+    },
+    {
+      "case" : "AppKit NSTextView \/ binary-diff",
+      "first_ms" : 17.964708327781409,
+      "max_ms" : 21.884291665628552,
+      "p50_ms" : 16.578749986365438,
+      "p95_ms" : 17.964708327781409,
+      "trials" : 20
+    },
+    {
+      "case" : "SwiftUI LazyVStack \/ binary-diff",
+      "first_ms" : 6.0754583682864904,
+      "max_ms" : 8.4266666672192514,
+      "p50_ms" : 5.5825000163167715,
+      "p95_ms" : 6.9745416985824704,
+      "trials" : 20
+    },
+    {
+      "case" : "AppKit NSTableView \/ 100000 commits",
+      "first_ms" : 36.614083335734904,
+      "max_ms" : 51.642333331983536,
+      "p50_ms" : 29.037541651632637,
+      "p95_ms" : 38.260124973021448,
+      "trials" : 20
+    },
+    {
+      "case" : "SwiftUI LazyVStack \/ 100000 commits",
+      "first_ms" : 13.578958343714476,
+      "max_ms" : 19.5065833395347,
+      "p50_ms" : 12.703333282843232,
+      "p95_ms" : 18.502499966416508,
+      "trials" : 20
+    }
+  ]
+}

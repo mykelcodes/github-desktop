@@ -1,0 +1,26 @@
+{
+  "git": "git version 2.56.1",
+  "commits": 100000,
+  "files": 10000,
+  "results": [
+    {
+      "case": "first 200 commits from 100000",
+      "trials": 20,
+      "p50_ms": 6.042082968633622,
+      "p95_ms": 6.420165998861194,
+      "max_ms": 7.221209001727402
+    },
+    {
+      "case": "warm status 10000 files",
+      "trials": 20,
+      "p50_ms": 21.613665972836316,
+      "p95_ms": 22.796083008870482,
+      "max_ms": 23.716875002719462
+    }
+  ],
+  "limitations": [
+    "warm filesystem cache",
+    "linear synthetic history",
+    "UI rendering measured separately"
+  ]
+}

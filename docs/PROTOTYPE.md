@@ -22,7 +22,7 @@ Local toolchain: Xcode 27.2, Swift 6.4.2, Apple Git 2.54.0, Apple Silicon. These
 - A filter-execution regression was reproduced with a temporary marker-writing helper, fixed with explicit filter overrides, and verified with clean/process/required filter settings.
 - API tests use URLProtocol fixtures. They are not live GitHub sign-in or private-repository evidence.
 - The development app bundle builds, its plist validates, and its ad-hoc signature verifies. Native UI inspection confirmed launch and the welcome screen/folder controls. Full folder-picker-to-diff interaction and accessibility acceptance remain to be recorded.
-- CI is configured but has not run remotely. There is no GitHub repository remote configured for this workspace.
+- CI is configured. This workspace now has the `mykelcodes/github-desktop` GitHub remote. Remote CI evidence is tracked separately from these local checks.
 
 ## Limits of this slice
 
@@ -32,7 +32,9 @@ Custom Git filters are suppressed, so filtered/LFS files may appear modified com
 
 Folder associations currently use a small atomic JSON file at `~/Library/Application Support/GitWorkspace/folders.json`, not the future content-cache database. A corrupt registry is reported and preserved. No GitHub tokens or private API cache are stored. App windows currently share the selected workspace; independent per-window contexts remain planned.
 
-The prototype uses `/usr/bin/git` from the installed developer tools. Bundled Git/LFS/helper distribution, Developer ID signing, notarization, Intel testing, performance budgets, and clean-machine compatibility remain unproven. The developer OAuth integration has not been registered; users will eventually connect through an ordinary **Sign in with GitHub** flow, without registering their own OAuth app or supplying tokens.
+Ordinary development builds use `/usr/bin/git` from the installed developer tools. M0 now also has an experimental app containing pinned Git 2.56.1 and Git LFS 3.8.1. Its bundle metadata selects the bundled runtime, and native repository/diff display was observed. Local transport, LFS, SSH signing and interrupted-rebase recovery checks pass. Developer ID/notarization, clean-machine and authenticated transport acceptance remain open. See the [M0 feasibility report](M0-FEASIBILITY.md).
+
+The user supplied a developer-owned OAuth Client ID. A local browser/PKCE/refresh/revocation harness has two passing synthetic tests, with live results pending. The distributed app's sign-in feature remains future work. End users will connect through **Sign in with GitHub**.
 
 ## Next implementation steps
 
@@ -41,4 +43,4 @@ The prototype uses `/usr/bin/git` from the installed developer tools. Bundled Gi
 3. Finish DISC-03 packaging and interruption/recovery experiments using the intended shipped Git runtime.
 4. Add the repository-operation coordinator and recovery checkpoints, then staging/commits and explicit remote configuration/clone flows.
 
-The backlog now records 12 completed subtasks with source/test evidence under 11 in-progress parent tasks: DISC-01, DISC-02, DISC-03, DISC-05, FND-01, FND-02, FND-04, FND-07, CORE-01, CORE-04 and CORE-13. Each parent also has an explicit unchecked subtask for its remaining acceptance criteria. See [completed work and remaining tasks](TASKS.md).
+The backlog now records 19 completed subtasks, with DISC-01 complete and 13 parents in progress. Parent completion remains tied to full acceptance evidence. See [completed work and remaining tasks](TASKS.md) and the [M0 acceptance audit](M0-FEASIBILITY.md).

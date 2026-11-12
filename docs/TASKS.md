@@ -1,10 +1,10 @@
 # Implementation backlog
 
-12 November 2026 · 12 completed subtasks · 11 parent tasks in progress · 72 parent tasks not started
+12 November 2026 · 19 completed subtasks · 1 parent task complete · 13 parent tasks in progress · 69 parent tasks not started
 
 This is an execution checklist for the [PRD](PRD.md) and [delivery plan](PLAN.md). Documentation preparation does not mark application tasks complete. Dependencies use task IDs; requirement references use the APP/HUB/GIT/NFR IDs in the PRD. CAP IDs refer to the [API coverage map](API-COVERAGE.md).
 
-Completed work is checked off beneath the corresponding parent task, with implementation and verification links. The first local inspection slice has **12 completed subtasks across 11 in-progress parent tasks**; the other **72 parent tasks are not started**. No full release milestone has passed yet. See [prototype evidence and limitations](PROTOTYPE.md).
+Completed work is checked off beneath the corresponding parent task, with implementation and verification links. Discovery and the local inspection prototype have **19 completed subtasks**, with **1 parent complete, 13 in progress and 69 not started**. No full release milestone has passed yet. See [prototype evidence](PROTOTYPE.md) and the [M0 acceptance audit](M0-FEASIBILITY.md).
 
 Parent IDs retain their original scope and dependencies. Numbered child IDs such as FND-01.1 record completed slices and the remaining acceptance work without marking an unfinished parent done. These prototype slices were authorized before the full M0 gate; the gate still applies to production readiness. Subtask counts are tracking detail, not a percentage of the whole product.
 
@@ -30,11 +30,11 @@ Parent IDs retain their original scope and dependencies. Numbered child IDs such
 
 ## M0 — Discovery and feasibility
 
-- [ ] **DISC-01 — Freeze the first-release workflow contract.** Size M; depends on none; covers all PRD requirements. Define the 20 workflow scripts, representative testers/fixtures, initial screen map, staffing assumptions, product-name shortlist and scope exclusions. Done when confirmed full-Git requirements and phased GitHub coverage are traceable without contradiction. **Status: in progress.**
+- [x] **DISC-01 — Freeze the first-release workflow contract.** Size M; depends on none; covers all PRD requirements. Defined 20 manual acceptance scripts, representative cohort roles/fixtures, screen map, staffing assumptions, name shortlist and scope exclusions, retaining full Git in 1.0. Evidence: [workflow contract](WORKFLOW-CONTRACT.md), [acceptance audit](M0-FEASIBILITY.md). **Status: complete.**
 
     - [x] **DISC-01.1 — Document the confirmed product scope and delivery baseline.** Completed the PRD, native Swift architecture proposal, delivery plan, risks and full-Git/local-folder requirements. Evidence: [PRD](PRD.md), [architecture](ARCHITECTURE.md), [plan](PLAN.md), [decisions](DECISIONS.md).
 
-    - [ ] **DISC-01.2 — Complete discovery acceptance.** Define the 20 executable workflow scripts, representative tester cohort and product-name shortlist; finalize the workflow contract.
+    - [x] **DISC-01.2 — Complete discovery acceptance.** Froze the 20 step-by-step manual scripts and scoring denominator, ten-person cohort criteria, fixture matrix, screen map and name shortlist. Participant recruitment and execution remain beta work. Evidence: [workflow contract](WORKFLOW-CONTRACT.md), [acceptance audit](M0-FEASIBILITY.md).
 
 - [ ] **DISC-02 — Prove production authentication and notifications.** Size L; depends on none; covers APP-01, HUB-02, NFR-04, CAP-01/CAP-10. Test registered-app authorization, PKCE/exchange, refresh, revoke, notification mutations, organization restrictions and two accounts. Produce redacted evidence and the native/broker decision; no confidential secret embedded in a prototype intended for distribution. **Status: in progress.**
 
@@ -42,13 +42,21 @@ Parent IDs retain their original scope and dependencies. Numbered child IDs such
 
     - [ ] **DISC-02.2 — Prove registered-app authentication.** Register the developer integration, establish callback/exchange infrastructure and exercise real sign-in, refresh/revoke, permissions, notifications and account isolation.
 
+    - [x] **DISC-02.3 — Prepare and verify the local OAuth harness.** Recorded the user-provided Client ID and loopback callback contract. Implemented local PKCE/browser/exchange/refresh/revocation tooling with hidden secret input. Two synthetic tests cover callback rejection/replay, cleanup and credential-output redaction. Live results remain pending. Evidence: [harness](../scripts/m0/oauth.py), [tests](../scripts/m0/test-oauth.py), [authentication setup and audit](M0-FEASIBILITY.md).
+
 - [ ] **DISC-03 — Prove the shipped Git runtime.** Size L; depends on none; covers GIT-01, GIT-10, GIT-12, NFR-06. Bundle Git and required helpers in a minimal Swift app; exercise HTTPS/SSH, signing and LFS on a clean Mac; attempt signing/notarization and review dependency distribution. Prototype an interrupted rebase and checkpoint recovery in disposable repositories. Record missing tool requirements and a viable shipping path. **Status: in progress.**
 
     - [x] **DISC-03.1 — Build and verify a local development app bundle.** The development bundle builds with installed Git; Info.plist and the ad-hoc signature validate, and native launch was observed. Evidence: [packaging script](../scripts/build-app.sh), [bundle metadata](../Resources/Info.plist), [verification record](PROTOTYPE.md).
 
     - [ ] **DISC-03.2 — Prove the distributable Git runtime and recovery experiment.** Bundle Git/helpers, review distribution obligations, test HTTPS/SSH/signing/LFS on a clean Mac, validate Developer ID/notarization, and demonstrate interrupted rebase/checkpoint recovery.
 
-- [ ] **DISC-04 — Benchmark diff and history controls.** Size M; depends on none; covers HUB-05, GIT-05, NFR-01/NFR-02. Measure SwiftUI/native text-table approaches on large, binary, renamed and Unicode files plus 100,000 commits. Record rendering/accessibility results and choose controls against the PRD budgets.
+    - [x] **DISC-03.3 — Verify a bundled runtime and interrupted recovery locally.** Built pinned Git 2.56.1 and staged Git LFS 3.8.1 inside an ad-hoc hardened-runtime app. Verified relocation, local LFS push/clone, SSH commit/tag signatures, public HTTPS read, native repository/diff display, interrupted rebase abort/continue and dirty checkpoint restoration. Evidence: [runtime build](../scripts/m0/build-git-runtime.sh), [app packaging](../scripts/m0/build-runtime-app.sh), [runtime checks](../scripts/m0/runtime-check.py), [recovery harness](../scripts/m0/recovery.py), [runtime manifest](evidence/runtime-manifest.json), [results](evidence/recovery.json). Clean-machine and signed distribution acceptance remain in DISC-03.2.
+
+- [ ] **DISC-04 — Benchmark diff and history controls.** Size M; depends on none; covers HUB-05, GIT-05, NFR-01/NFR-02. Measure SwiftUI/native text-table approaches on large, binary, renamed and Unicode files plus 100,000 commits. Record rendering/accessibility results and choose controls against the PRD budgets. **Status: in progress.**
+
+    - [x] **DISC-04.1 — Measure control and Git fixture performance.** Ran 20 optimized offscreen trials per control/fixture and compared 200-line text pages. Measured bounded history retrieval from 100,000 real commits and warm status on 10,000 files using the built Git runtime. Recorded p50/p95 and process memory. Evidence: [control harness](../scripts/m0/ControlsBenchmark.swift), [Git harness](../scripts/m0/git-benchmark.py), [raw measurements](evidence/controls-results.json), [Git results](evidence/git-benchmark.json), [interpretation](M0-FEASIBILITY.md).
+
+    - [ ] **DISC-04.2 — Validate interaction/accessibility and finalize controls.** Test visible scrolling/selection, keyboard and VoiceOver, reference 16 GB hardware, combined history loading/rendering and memory. Confirm the bounded diff/history control decision.
 
 - [ ] **DISC-05 — Create the endpoint/capability registry.** Size L; depends on DISC-01; covers APP-04 and CAP-01–CAP-34. Pin REST/schema sources; record operations, token/permission/host combinations, limits, fallback and evidence status. Verify representative 1.0 endpoints live on disposable resources; mark all untested combinations honestly. **Status: in progress.**
 
@@ -56,9 +64,19 @@ Parent IDs retain their original scope and dependencies. Numbered child IDs such
 
     - [ ] **DISC-05.2 — Complete the operation-level compatibility registry.** Generate and pin endpoint/schema inventory, record operation-specific permissions/hosts and prove representative authenticated operations using disposable resources.
 
-- [ ] **DISC-06 — Resolve platform and architecture decisions.** Size M; depends on DISC-02, DISC-03, DISC-04; covers NFR-04/NFR-06. Record OS/CPU/toolchain, distribution/sandbox, persistence, updater, Git versions and broker ownership if needed. Each selected dependency has provenance, license, maintenance and replacement considerations.
+    - [x] **DISC-05.3 — Generate the pinned schema inventory.** Hash-verified official schema inputs and generated 1,280 REST operation records and 315 GraphQL root fields. Recorded candidate mappings, API version, schema flags, pagination parameters, documentation fallback, owner and unknown compatibility fields. Evidence: [source pins](api-sources.json), [generator](../scripts/m0/api-inventory.py), [REST records](evidence/rest-operations.csv), [GraphQL records](evidence/graphql-operations.json). Manual permission/host review and live coverage remain in DISC-05.2.
 
-- [ ] **DISC-07 — Approve the feasibility report and revised plan.** Size S; depends on DISC-01–DISC-06; covers the M0 gate. Consolidate spike evidence, unresolved constraints, scope effects and estimates. Done when a real authenticated workflow and a recoverable Git mutation have been demonstrated and dependent choices can be implemented.
+- [ ] **DISC-06 — Resolve platform and architecture decisions.** Size M; depends on DISC-02, DISC-03, DISC-04; covers NFR-04/NFR-06. Record OS/CPU/toolchain, distribution/sandbox, persistence, updater, Git versions and broker ownership if needed. Each selected dependency has provenance, license, maintenance and replacement considerations. **Status: in progress.**
+
+    - [x] **DISC-06.1 — Record observed platform and dependency evidence.** Documented toolchain, runtime provenance/licenses, rendering recommendation, distribution constraints and updater/persistence candidates. Evidence: [runtime manifest](evidence/runtime-manifest.json), [dependency and architecture review](M0-FEASIBILITY.md). This is preparatory review while dependent spikes remain open.
+
+    - [ ] **DISC-06.2 — Resolve dependent production choices.** Complete the platform/CPU matrix, signed distribution and auth decisions, validate persistence/updater choices and assign operational ownership before accepting the architecture.
+
+- [ ] **DISC-07 — Approve the feasibility report and revised plan.** Size S; depends on DISC-01–DISC-06; covers the M0 gate. Consolidate spike evidence, unresolved constraints, scope effects and estimates. Done when a real authenticated workflow and a recoverable Git mutation have been demonstrated and dependent choices can be implemented. **Status: in progress.**
+
+    - [x] **DISC-07.1 — Consolidate the current feasibility evidence.** Recorded each task's delivered evidence, unresolved acceptance, measured scope effects and remaining execution order. Retained provisional estimates while critical-path inputs remain unknown. Evidence: [M0 report](M0-FEASIBILITY.md), [revised M0 sequence](PLAN.md).
+
+    - [ ] **DISC-07.2 — Approve M0 after the remaining evidence passes.** Demonstrate the registered-token workflow, close DISC-02–DISC-06 and revise estimates/decisions against the completed spikes. Record product/engineering approval.
 
 ## M1 — Foundations
 

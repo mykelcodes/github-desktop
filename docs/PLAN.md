@@ -46,6 +46,8 @@ Run discovery and technical spikes before building all screens:
 
 **Gate:** no unresolved feasibility issue on production authentication, shipping Git, or preserving user work. If a spike fails, revise its architecture and estimate; do not conceal the issue behind a working mock. Record the proposed macOS minimum, CPU support and distribution decision.
 
+The [12 November feasibility audit](M0-FEASIBILITY.md) freezes the 20-script discovery contract and records local bundled-runtime/recovery and rendering measurements. M0 remains open. Complete registered-app live evidence first, then clean-machine/signed distribution and accessibility checks, curate representative API permissions/operations, and resolve architecture/operational ownership before approval. Keep the product estimates provisional until those critical-path results support a revision.
+
 ### M1 — Create reusable foundations
 
 Build account-aware navigation, native command routing, typed API transport, cache/draft storage, Git process primitives, and local diagnostics. Establish structured concurrency conventions and fixture-based testing.

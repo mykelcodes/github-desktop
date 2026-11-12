@@ -33,6 +33,8 @@ This build does not initialize/clone repositories, edit remotes, stage, commit, 
 | [Decisions and risks](docs/DECISIONS.md) | Confirmed requirements, proposed defaults, open decisions, and mitigations |
 | [Prototype status](docs/PROTOTYPE.md) | Implemented slice, verification evidence, and next steps |
 | [Authentication feasibility](docs/AUTH-FEASIBILITY.md) | Developer OAuth setup and unresolved live sign-in checks |
+| [M0 feasibility report](docs/M0-FEASIBILITY.md) | Runtime/recovery and control measurements, source pins, auth harness and remaining gate acceptance |
+| [Workflow contract](docs/WORKFLOW-CONTRACT.md) | The 20 acceptance scripts, testers/fixtures, screen map and first-release scope |
 
 ## Release direction
 

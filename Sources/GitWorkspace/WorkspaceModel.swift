@@ -15,7 +15,7 @@ final class WorkspaceModel {
     var connectionError: String?
     var repositoryError: String?
 
-    let git = GitRepositoryService()
+    let git: GitRepositoryService
     private let registry: FolderRegistry
     private var refreshTask: Task<Void, Never>?
     private var refreshID = UUID()
@@ -24,6 +24,11 @@ final class WorkspaceModel {
     var selectedFolder: ConnectedFolder? { folders.first { $0.id == selectedID } }
 
     init() {
+        let usesBundledGit = Bundle.main.object(forInfoDictionaryKey: "GitWorkspaceBundledGit") as? Bool == true
+        let executable = usesBundledGit
+            ? Bundle.main.bundleURL.appendingPathComponent("Contents/Resources/GitRuntime/bin/git")
+            : URL(fileURLWithPath: "/usr/bin/git")
+        git = GitRepositoryService(executableURL: executable)
         let arguments = ProcessInfo.processInfo.arguments
         let storage: URL
         if let index = arguments.firstIndex(of: "--registry-path"), arguments.indices.contains(index + 1) {

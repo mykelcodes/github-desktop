@@ -1,0 +1,15 @@
+{
+  "reviewed_on": "2026-11-12",
+  "rest_version": "2026-03-10",
+  "rest": {
+    "url": "https://raw.githubusercontent.com/github/rest-api-description/bd6df26d2a0104874fe5025a25ebcde356413364/descriptions/api.github.com/api.github.com.json",
+    "revision": "bd6df26d2a0104874fe5025a25ebcde356413364",
+    "sha256": "9416f1144aee15971790d0de5388e7ad88a6fdad759fdb729bf94b8414bfb57f"
+  },
+  "graphql": {
+    "url": "https://docs.github.com/public/fpt/schema.docs.graphql",
+    "sha256": "46f1d455d72ab784c6cb2b86e9b023df195dcfd2ed92099108b0faa5faa5d1fc",
+    "snapshot": "evidence/github-schema.graphql.gz",
+    "note": "The public download is mutable. A compressed matching snapshot is retained for regeneration. A changed hash requires review and a new pin."
+  }
+}

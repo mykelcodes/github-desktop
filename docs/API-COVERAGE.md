@@ -95,6 +95,8 @@ Scope names are starting points, not a blanket authorization guarantee. [OAuth s
 
 ## 5. Endpoint registry to build in M0
 
+The first generated inventory is now available with [source hashes and REST revision](api-sources.json), [1,280 REST operations](evidence/rest-operations.csv), and [315 GraphQL root fields](evidence/graphql-operations.json). Regenerate with `python3 scripts/m0/api-inventory.py` after downloading matching inputs into `.build/m0`. The generator verifies both hashes before reading operations. REST mappings are candidates, while GraphQL fields await manual triage. OAuth scopes, fine-grained permissions, role/plan and live compatibility remain explicitly unverified. Schema flags alone cannot establish actual authorization. See the [M0 acceptance audit](M0-FEASIBILITY.md).
+
 Generate an inventory from a pinned GitHub REST OpenAPI description plus selected GraphQL queries/mutations; augment it with web workflows, local Git, and browser-only operations. The REST catalog identifies an official OpenAPI description. [REST documentation](https://docs.github.com/en/rest).
 
 Each registry record must include: operation ID, CAP/PRD identifiers, user outcome, method/path or GraphQL operation, API version/schema snapshot, token type, scopes/permissions, required role/plan, host support, read/write/destructive classification, pagination/limits, native coverage state, fallback URL, verification date, fixture/live-test evidence, owner, and milestone.
