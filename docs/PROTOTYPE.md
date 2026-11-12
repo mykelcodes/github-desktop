@@ -41,4 +41,4 @@ The prototype uses `/usr/bin/git` from the installed developer tools. Bundled Gi
 3. Finish DISC-03 packaging and interruption/recovery experiments using the intended shipped Git runtime.
 4. Add the repository-operation coordinator and recovery checkpoints, then staging/commits and explicit remote configuration/clone flows.
 
-The prototype touches FND-01/FND-02/FND-07, CORE-01/CORE-04/CORE-13 and part of DISC-02/DISC-03. Their production acceptance criteria are broader and remain open in [TASKS.md](TASKS.md).
+The backlog now records 12 completed subtasks with source/test evidence under 11 in-progress parent tasks: DISC-01, DISC-02, DISC-03, DISC-05, FND-01, FND-02, FND-04, FND-07, CORE-01, CORE-04 and CORE-13. Each parent also has an explicit unchecked subtask for its remaining acceptance criteria. See [completed work and remaining tasks](TASKS.md).

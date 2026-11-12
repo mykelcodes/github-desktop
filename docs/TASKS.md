@@ -1,16 +1,18 @@
 # Implementation backlog
 
-12 November 2026 · Local prototype implemented; production milestone tasks remain open
+12 November 2026 · 12 completed subtasks · 11 parent tasks in progress · 72 parent tasks not started
 
 This is an execution checklist for the [PRD](PRD.md) and [delivery plan](PLAN.md). Documentation preparation does not mark application tasks complete. Dependencies use task IDs; requirement references use the APP/HUB/GIT/NFR IDs in the PRD. CAP IDs refer to the [API coverage map](API-COVERAGE.md).
 
-The first local inspection slice has working code and tests; see [prototype evidence and limitations](PROTOTYPE.md). It partially implements foundations, repository inspection and the Local tab. No full milestone or production epic below is marked complete on the strength of the prototype alone.
+Completed work is checked off beneath the corresponding parent task, with implementation and verification links. The first local inspection slice has **12 completed subtasks across 11 in-progress parent tasks**; the other **72 parent tasks are not started**. No full release milestone has passed yet. See [prototype evidence and limitations](PROTOTYPE.md).
+
+Parent IDs retain their original scope and dependencies. Numbered child IDs such as FND-01.1 record completed slices and the remaining acceptance work without marking an unfinished parent done. These prototype slices were authorized before the full M0 gate; the gate still applies to production readiness. Subtask counts are tracking detail, not a percentage of the whole product.
 
 ## How to use this backlog
 
 - **P0:** required for public 1.0, including feasibility and quality gates. **P1:** prioritized post-1.0 coverage. **P2:** exploratory/later scope.
 - **S/M/L:** relative implementation complexity. L items are epics that must be split into reviewable subtasks before starting; these labels are not committed day estimates.
-- Each checkbox needs links to implementation and verification evidence before completion. A task's named acceptance criteria supplement the common definition of done in the plan.
+- Update the relevant subtask checkbox and evidence in the same change that delivers the work. Check a parent only when all of its acceptance criteria pass. Each checkbox needs links to implementation and verification evidence before completion. A task's named acceptance criteria supplement the common definition of done in the plan.
 - Owner roles below are responsibilities, not assigned people. Track assignee, status, estimate, blocking decision and evidence in the issue tracker when implementation begins.
 - Depends on “M0”, “M1”, or another milestone means its gate in PLAN.md must pass; task dependencies can be worked in parallel only when their prerequisites are satisfied.
 
@@ -28,15 +30,31 @@ The first local inspection slice has working code and tests; see [prototype evid
 
 ## M0 — Discovery and feasibility
 
-- [ ] **DISC-01 — Freeze the first-release workflow contract.** Size M; depends on none; covers all PRD requirements. Define the 20 workflow scripts, representative testers/fixtures, initial screen map, staffing assumptions, product-name shortlist and scope exclusions. Done when confirmed full-Git requirements and phased GitHub coverage are traceable without contradiction.
+- [ ] **DISC-01 — Freeze the first-release workflow contract.** Size M; depends on none; covers all PRD requirements. Define the 20 workflow scripts, representative testers/fixtures, initial screen map, staffing assumptions, product-name shortlist and scope exclusions. Done when confirmed full-Git requirements and phased GitHub coverage are traceable without contradiction. **Status: in progress.**
 
-- [ ] **DISC-02 — Prove production authentication and notifications.** Size L; depends on none; covers APP-01, HUB-02, NFR-04, CAP-01/CAP-10. Test registered-app authorization, PKCE/exchange, refresh, revoke, notification mutations, organization restrictions and two accounts. Produce redacted evidence and the native/broker decision; no confidential secret embedded in a prototype intended for distribution.
+    - [x] **DISC-01.1 — Document the confirmed product scope and delivery baseline.** Completed the PRD, native Swift architecture proposal, delivery plan, risks and full-Git/local-folder requirements. Evidence: [PRD](PRD.md), [architecture](ARCHITECTURE.md), [plan](PLAN.md), [decisions](DECISIONS.md).
 
-- [ ] **DISC-03 — Prove the shipped Git runtime.** Size L; depends on none; covers GIT-01, GIT-10, GIT-12, NFR-06. Bundle Git and required helpers in a minimal Swift app; exercise HTTPS/SSH, signing and LFS on a clean Mac; attempt signing/notarization and review dependency distribution. Prototype an interrupted rebase and checkpoint recovery in disposable repositories. Record missing tool requirements and a viable shipping path.
+    - [ ] **DISC-01.2 — Complete discovery acceptance.** Define the 20 executable workflow scripts, representative tester cohort and product-name shortlist; finalize the workflow contract.
+
+- [ ] **DISC-02 — Prove production authentication and notifications.** Size L; depends on none; covers APP-01, HUB-02, NFR-04, CAP-01/CAP-10. Test registered-app authorization, PKCE/exchange, refresh, revoke, notification mutations, organization restrictions and two accounts. Produce redacted evidence and the native/broker decision; no confidential secret embedded in a prototype intended for distribution. **Status: in progress.**
+
+    - [x] **DISC-02.1 — Research the native OAuth flow and document its prerequisites.** Reviewed official authorization, callback, refresh and notification documentation; recorded the unresolved notification compatibility and developer-owned registration requirements. Evidence: [authentication feasibility](AUTH-FEASIBILITY.md). This completes research only, not sign-in verification.
+
+    - [ ] **DISC-02.2 — Prove registered-app authentication.** Register the developer integration, establish callback/exchange infrastructure and exercise real sign-in, refresh/revoke, permissions, notifications and account isolation.
+
+- [ ] **DISC-03 — Prove the shipped Git runtime.** Size L; depends on none; covers GIT-01, GIT-10, GIT-12, NFR-06. Bundle Git and required helpers in a minimal Swift app; exercise HTTPS/SSH, signing and LFS on a clean Mac; attempt signing/notarization and review dependency distribution. Prototype an interrupted rebase and checkpoint recovery in disposable repositories. Record missing tool requirements and a viable shipping path. **Status: in progress.**
+
+    - [x] **DISC-03.1 — Build and verify a local development app bundle.** The development bundle builds with installed Git; Info.plist and the ad-hoc signature validate, and native launch was observed. Evidence: [packaging script](../scripts/build-app.sh), [bundle metadata](../Resources/Info.plist), [verification record](PROTOTYPE.md).
+
+    - [ ] **DISC-03.2 — Prove the distributable Git runtime and recovery experiment.** Bundle Git/helpers, review distribution obligations, test HTTPS/SSH/signing/LFS on a clean Mac, validate Developer ID/notarization, and demonstrate interrupted rebase/checkpoint recovery.
 
 - [ ] **DISC-04 — Benchmark diff and history controls.** Size M; depends on none; covers HUB-05, GIT-05, NFR-01/NFR-02. Measure SwiftUI/native text-table approaches on large, binary, renamed and Unicode files plus 100,000 commits. Record rendering/accessibility results and choose controls against the PRD budgets.
 
-- [ ] **DISC-05 — Create the endpoint/capability registry.** Size L; depends on DISC-01; covers APP-04 and CAP-01–CAP-34. Pin REST/schema sources; record operations, token/permission/host combinations, limits, fallback and evidence status. Verify representative 1.0 endpoints live on disposable resources; mark all untested combinations honestly.
+- [ ] **DISC-05 — Create the endpoint/capability registry.** Size L; depends on DISC-01; covers APP-04 and CAP-01–CAP-34. Pin REST/schema sources; record operations, token/permission/host combinations, limits, fallback and evidence status. Verify representative 1.0 endpoints live on disposable resources; mark all untested combinations honestly. **Status: in progress.**
+
+    - [x] **DISC-05.1 — Create the initial GitHub capability inventory.** Documented 34 capability areas with proposed releases, public API sources, authentication caveats and handoff boundaries. Evidence: [capability map](API-COVERAGE.md).
+
+    - [ ] **DISC-05.2 — Complete the operation-level compatibility registry.** Generate and pin endpoint/schema inventory, record operation-specific permissions/hosts and prove representative authenticated operations using disposable resources.
 
 - [ ] **DISC-06 — Resolve platform and architecture decisions.** Size M; depends on DISC-02, DISC-03, DISC-04; covers NFR-04/NFR-06. Record OS/CPU/toolchain, distribution/sandbox, persistence, updater, Git versions and broker ownership if needed. Each selected dependency has provenance, license, maintenance and replacement considerations.
 
@@ -44,19 +62,37 @@ The first local inspection slice has working code and tests; see [prototype evid
 
 ## M1 — Foundations
 
-- [ ] **FND-01 — Create the Swift app/package workspace and CI.** Size M; depends on M0; covers NFR-06. Pin toolchain/dependencies, add app/test targets, build/test commands and CI. A clean checkout builds and runs core tests with no developer-specific paths or credentials.
+- [ ] **FND-01 — Create the Swift app/package workspace and CI.** Size M; depends on M0; covers NFR-06. Pin toolchain/dependencies, add app/test targets, build/test commands and CI. A clean checkout builds and runs core tests with no developer-specific paths or credentials. **Status: in progress.**
 
-- [ ] **FND-02 — Build native navigation and command routing.** Size L; depends on FND-01; covers APP-02/APP-03, NFR-02. Implement account/repository routing, sidebar, inspector, multi-window restoration, menus and command palette shell. Keyboard/VoiceOver can navigate sample content and unsupported links hand off explicitly.
+    - [x] **FND-01.1 — Create the Swift app, library and test targets.** Added a Swift 6 package targeting macOS 15 with the executable, GitEngine, GitHubKit, WorkspaceCore and three test targets; the local build succeeds. Evidence: [package manifest](../Package.swift), [verification record](PROTOTYPE.md).
+
+    - [x] **FND-01.2 — Add build/run/test commands and the CI workflow definition.** Created executable development scripts and a macOS workflow with explicit CI Xcode selection. Local scripts were exercised; remote CI execution is pending. Evidence: [build](../scripts/build-app.sh), [run](../scripts/run.sh), [test](../scripts/test.sh), [workflow](../.github/workflows/macos.yml).
+
+    - [ ] **FND-01.3 — Validate the clean-checkout and remote CI baseline.** Run the workflow on the configured repository, verify a clean checkout with the supported toolchain and finalize production toolchain policy after M0.
+
+- [ ] **FND-02 — Build native navigation and command routing.** Size L; depends on FND-01; covers APP-02/APP-03, NFR-02. Implement account/repository routing, sidebar, inspector, multi-window restoration, menus and command palette shell. Keyboard/VoiceOver can navigate sample content and unsupported links hand off explicitly. **Status: in progress.**
+
+    - [x] **FND-02.1 — Build the native workspace shell and local views.** Implemented the sidebar, welcome screen, Local/GitHub destinations, folder-picker command, refresh command and native diff view. Build and native welcome-screen launch were verified. Evidence: [workspace view](../Sources/GitWorkspace/WorkspaceView.swift), [repository view](../Sources/GitWorkspace/RepositoryView.swift), [app commands](../Sources/GitWorkspace/GitWorkspaceApp.swift), [verification record](PROTOTYPE.md). Full UI journey validation remains open.
+
+    - [ ] **FND-02.2 — Complete navigation and interaction acceptance.** Add account routing, independent window contexts/restoration, inspector and command palette; validate folder-picker-to-diff, keyboard/VoiceOver and unsupported-link handoffs.
 
 - [ ] **FND-03 — Implement account and credential lifecycle.** Size L; depends on FND-01, DISC-02; covers APP-01, NFR-04. Add system-browser auth, Keychain, refresh serialization, sign-out/reconnect and broker integration if selected. Test two accounts, replay/cancel, expiry and revocation; tokens remain absent from logs and URLs.
 
-- [ ] **FND-04 — Implement typed REST and GraphQL transport.** Size L; depends on FND-01, FND-03; covers APP-04, NFR-03/NFR-05. Add versioning, pagination, bounded requests, partial GraphQL errors and typed denial/rate/timeout states. Fixtures prove cross-host redirects cannot inherit credentials and malformed responses remain actionable.
+- [ ] **FND-04 — Implement typed REST and GraphQL transport.** Size L; depends on FND-01, FND-03; covers APP-04, NFR-03/NFR-05. Add versioning, pagination, bounded requests, partial GraphQL errors and typed denial/rate/timeout states. Fixtures prove cross-host redirects cannot inherit credentials and malformed responses remain actionable. **Status: in progress.**
+
+    - [x] **FND-04.1 — Implement the public repository REST client.** Added strict repository URL parsing, a versioned read-only request, typed decoding and denied/rate-limit/offline handling. Thirteen Swift Testing tests pass, including parameterized cases. Evidence: [client](../Sources/GitHubKit/GitHubClient.swift), [models](../Sources/GitHubKit/GitHubRepository.swift), [tests](../Tests/GitHubKitTests/GitHubClientTests.swift).
+
+    - [ ] **FND-04.2 — Complete authenticated REST and GraphQL transport.** Add account credentials, endpoint pagination, GraphQL/partial errors, request scheduling, cancellation/retry policy and authenticated cross-host isolation tests.
 
 - [ ] **FND-05 — Implement capability and permission evaluation.** Size M; depends on FND-04, DISC-05; covers APP-04. Represent allowed/denied/unknown/unsupported separately; combine role, token, host and resource evidence. UI actions show accurate explanations; unknown state never grants permission by assumption.
 
 - [ ] **FND-06 — Implement cache, drafts and migrations.** Size L; depends on FND-01, FND-03; covers APP-05, NFR-04. Add account-owned records, revision/completeness metadata, atomic draft saving, export and erasure. Prove relaunch persistence, migration, cache corruption recovery and removal of one account without touching another.
 
-- [ ] **FND-07 — Implement the Git process boundary and fixture harness.** Size L; depends on FND-01, DISC-03; covers GIT-01, NFR-03/NFR-04. Add structured arguments, bounded output, progress/cancellation, trust policy, host-scoped credentials and temporary repos/remotes. Unusual filenames and malicious-looking refs cannot become shell commands.
+- [ ] **FND-07 — Implement the Git process boundary and fixture harness.** Size L; depends on FND-01, DISC-03; covers GIT-01, NFR-03/NFR-04. Add structured arguments, bounded output, progress/cancellation, trust policy, host-scoped credentials and temporary repos/remotes. Unusual filenames and malicious-looking refs cannot become shell commands. **Status: in progress.**
+
+    - [x] **FND-07.1 — Implement and test the read-only Git boundary.** Added structured process arguments, bounded output, cancellation, safe preview handling, configured-helper suppression, redacted remotes and disposable real-Git fixtures. The clean/process-filter regression is covered by a passing test. Evidence: [process runner](../Sources/GitEngine/GitProcess.swift), [service](../Sources/GitEngine/GitRepositoryService.swift), [integration tests](../Tests/GitEngineTests/GitRepositoryServiceTests.swift).
+
+    - [ ] **FND-07.2 — Complete the production process and credential boundary.** Add the full repository trust model, host-scoped transport credentials, mutation/helper lifecycle support and required runtime/error coverage using the selected shipped Git distribution.
 
 - [ ] **FND-08 — Implement refresh scheduling and connectivity state.** Size M; depends on FND-04, FND-06; covers APP-05, NFR-05. Deduplicate/revalidate reads; obey polling/backoff headers; handle sleep/wake, offline and obsolete searches. Reconnection never submits a draft or stale mutation automatically.
 
@@ -86,13 +122,21 @@ The first local inspection slice has working code and tests; see [prototype evid
 
 ## M3 — Core local Git
 
-- [ ] **CORE-01 — Discover and register local repositories.** Size M; depends on M1; covers GIT-01/GIT-11. Detect normal repositories, linked worktrees, common Git directories and detached HEAD. Map remotes to GitHub explicitly; moved/missing directories do not corrupt registry state.
+- [ ] **CORE-01 — Discover and register local repositories.** Size M; depends on M1; covers GIT-01/GIT-11. Detect normal repositories, linked worktrees, common Git directories and detached HEAD. Map remotes to GitHub explicitly; moved/missing directories do not corrupt registry state. **Status: in progress.**
+
+    - [x] **CORE-01.1 — Discover existing repository roots and Git metadata.** Real-Git tests cover subfolder/root resolution, normal/linked worktrees, unborn/detached HEAD, remotes and plain/missing folders. Evidence: [repository service](../Sources/GitEngine/GitRepositoryService.swift), [parsers](../Sources/GitEngine/GitOutputParser.swift), [tests](../Tests/GitEngineTests/GitRepositoryServiceTests.swift).
+
+    - [ ] **CORE-01.2 — Complete discovery and registration lifecycle acceptance.** Add moved-folder identity verification/relinking and validated account-aware remote associations; test the complete registry lifecycle under external changes.
 
 - [ ] **CORE-02 — Coordinate mutations and external change detection.** Size L; depends on CORE-01; covers NFR-03, GIT-10/GIT-11. Serialize writes across shared Git directories, watch/debounce changes and recheck refs/index. Test external Git, multiple windows/worktrees, lock contention and app restart.
 
 - [ ] **CORE-03 — Implement clone/init/open/create/fork and transport setup.** Size L; depends on CORE-01, FND-03/FND-07, COL-01; covers GIT-01, HUB-01. Provide destination/remotes/upstream/account selection, HTTPS/SSH progress/cancel and fresh-Mac onboarding. Local-only Git works without GitHub sign-in. Never store tokens in remote URLs; interrupted clones have explicit cleanup.
 
-- [ ] **CORE-04 — Parse and display worktree/index state.** Size L; depends on CORE-02; covers GIT-02. Distinguish staged/unstaged/untracked/ignored, renames, mode/symlink/binary/submodule changes. Fixtures include whitespace, non-UTF-8 paths, case-only renames and simultaneous editor changes.
+- [ ] **CORE-04 — Parse and display worktree/index state.** Size L; depends on CORE-02; covers GIT-02. Distinguish staged/unstaged/untracked/ignored, renames, mode/symlink/binary/submodule changes. Fixtures include whitespace, non-UTF-8 paths, case-only renames and simultaneous editor changes. **Status: in progress.**
+
+    - [x] **CORE-04.1 — Parse and preview core local change states.** Implemented staged/unstaged/untracked states, rename paths, conflicts and separate text previews; tests cover unusual paths and unsafe/large/binary untracked previews. Evidence: [parser](../Sources/GitEngine/GitOutputParser.swift), [diff service](../Sources/GitEngine/GitRepositoryService.swift), [tests](../Tests/GitEngineTests/GitRepositoryServiceTests.swift).
+
+    - [ ] **CORE-04.2 — Complete the full file-state compatibility matrix.** Add ignored-file presentation, complete mode/symlink/binary/submodule behavior, non-UTF-8 filename support, case-only rename fixtures and simultaneous-editor-change validation.
 
 - [ ] **CORE-05 — Implement selective staging and safe restore.** Size L; depends on CORE-04, CORE-10; covers GIT-02. Stage/unstage files/hunks/valid line selections, edit ignore rules and preview discards. Changed source invalidates stale patches; discarded content is checkpointed or the action is blocked with explanation.
 
@@ -110,7 +154,11 @@ The first local inspection slice has working code and tests; see [prototype evid
 
 - [ ] **CORE-12 — Validate core Git alpha.** Size M; depends on CORE-01–CORE-11, CORE-13, CORE-14; covers GIT-01–GIT-06, GIT-10, GIT-13. Verify tree/index/ref results against real Git across clean, dirty, detached and divergent fixtures. Run clean-machine clone → partial stage → commit → push and folder-connection cases; record safety failures.
 
-- [ ] **CORE-13 — Build the Local tab and folder associations.** Size L; depends on CORE-01, CORE-03, FND-02; covers GIT-13, APP-02. Add repository-first Connect Folder/Clone and global Local Folders entry points, inspect Git roots/remotes, verify target/account, and show checkout/path/branch/sync state. Test multiple checkouts, remote mismatch, nested folders, access denial, moved-folder relinking and unlinking without changing remotes or deleting files.
+- [ ] **CORE-13 — Build the Local tab and folder associations.** Size L; depends on CORE-01, CORE-03, FND-02; covers GIT-13, APP-02. Add repository-first Connect Folder/Clone and global Local Folders entry points, inspect Git roots/remotes, verify target/account, and show checkout/path/branch/sync state. Test multiple checkouts, remote mismatch, nested folders, access denial, moved-folder relinking and unlinking without changing remotes or deleting files. **Status: in progress.**
+
+    - [x] **CORE-13.1 — Persist and safely remove local folder associations.** Added canonical-path deduplication, atomic storage and app-only disconnect. Three tests verify persistence, permissions, corruption preservation and disconnect without file deletion. Evidence: [folder registry](../Sources/WorkspaceCore/FolderRegistry.swift), [tests](../Tests/WorkspaceCoreTests/FolderRegistryTests.swift), [command wiring](../Sources/GitWorkspace/WorkspaceModel.swift).
+
+    - [ ] **CORE-13.2 — Complete the end-to-end folder connection experience.** Validate folder-picker/diff/reconnect/disconnect UI flows; implement clone and repository-first target/account selection, multiple-checkout picker, remote mismatch handling, access-denied recovery and moved-folder relinking.
 
 - [ ] **CORE-14 — Implement safe folder initialization and import.** Size L; depends on CORE-13, CORE-06, CORE-10; covers GIT-13. Preview initialization/ignore rules and remote additions for local folders; inspect remote history before offering publication. For ordinary folders targeting populated repositories, clone separately and preview selected file imports/collisions onto a branch. Preserve source folders and Git metadata; unknown remote state cannot mean empty. Tests prove linking never commits, pushes or overwrites history automatically.
 
