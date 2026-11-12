@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-12",
+  "cpu": "arm64",
+  "os": "macOS 27.0.1 (26A434)",
+  "xcode": "27.2 (27B52)",
+  "swift": "6.4.2",
+  "deployment_target": "macOS 15.0; execution unverified on macOS 15",
+  "git": {
+    "version": "2.56.1",
+    "source": "https://www.kernel.org/pub/software/scm/git/git-2.56.1.tar.xz",
+    "sha256": "f0b0bf89264b9bd2e1c640363e7529643989da76281600473c50745cd34a607f",
+    "license": "GPL-2.0; distribution review pending"
+  },
+  "git_lfs": {
+    "version": "3.8.1",
+    "source": "https://github.com/git-lfs/git-lfs/releases/download/v3.8.1/git-lfs-darwin-arm64-v3.8.1.zip",
+    "sha256": "0ba10e897e0496412cd86eacaed4ed554c97ddc29bc5c709d28faa5eaaa2222c",
+    "license": "MIT, Go BSD and dependency notices; complete audit pending"
+  },
+  "bundle_signature": "ad-hoc hardened runtime; deep/strict verification passed",
+  "developer_id_identities": 0,
+  "notarization": "not exercised",
+  "https_public_ls_remote": {
+    "result": "passed",
+    "remote": "https://github.com/git/git.git",
+    "head": "1891de46f79dc444a47db1c87bd0c8c76b5463f2"
+  },
+  "native_app_observation": "Runtime spike app loaded repository, branch, changed files and selected diff through bundled Git. Observed using accessibility tree.",
+  "dynamic_libraries": "Git and HTTPS helper link only /usr/lib and /System/Library paths on this Mac; full runtime dependency audit pending",
+  "source_integrity": "SHA-256 matched kernel.org checksum over HTTPS; detached signature not verified"
+}

@@ -80,3 +80,9 @@ Unresolved implementation choices do not prevent drafting or reviewing these doc
 ## 6. Recording a resolved decision
 
 For each material decision, record date, owner, options, chosen approach, evidence, consequences, affected requirements/tasks, and conditions for revisiting it. A recommendation becomes “accepted” only after an explicit product decision or the designated technical validation; do not rewrite the user's confirmed requirements as assumptions.
+
+## 7. M0 evidence update
+
+On 12 November, DISC-01 established the [20-workflow contract](WORKFLOW-CONTRACT.md), representative cohort/fixtures, screen map, name shortlist and staffing assumptions. The Git Workspace label remains provisional pending product selection and availability review.
+
+Local experiments support the bundled-CLI direction in DEC-09. Git 2.56.1 and Git LFS 3.8.1 run after relocation inside the ad-hoc hardened-runtime app, and synthetic mutation/checkpoint recovery passed. The rendering recommendation is bounded native text pages with a virtualized history table, pending interaction/accessibility validation. These findings narrow the candidates for DEC-06/DEC-09 and OPEN-03/OPEN-05. Clean-machine, production auth, platform matrix and signed distribution gates remain open. The [feasibility report](M0-FEASIBILITY.md) records dependency provenance, measurements, limitations and remaining decisions. No production architecture proposal has been accepted through a documentation-only change.

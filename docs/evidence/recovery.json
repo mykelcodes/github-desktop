@@ -1,0 +1,21 @@
+{
+  "experiment": "DISC-03 interrupted rebase",
+  "git": "git version 2.56.1",
+  "passed": [
+    "SIGKILL after commit replay",
+    "fresh-process state detection",
+    "abort restores HEAD",
+    "staged content restored",
+    "unstaged content restored",
+    "untracked content restored",
+    "continue completes after SIGKILL",
+    "checkpoint restored to new branch",
+    "git fsck"
+  ],
+  "limitations": [
+    "runtime selected by --git",
+    "synthetic fixture",
+    "no app journal implementation",
+    "no disk-full, lock-contention, or power-loss proof"
+  ]
+}

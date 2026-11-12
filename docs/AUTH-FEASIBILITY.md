@@ -34,7 +34,11 @@ The notifications reference says these endpoints support classic PAT authenticat
 
 ## Prerequisites and acceptance evidence
 
-Authentication implementation needs an owned OAuth app registration and client ID, exact callback/domain configuration, Apple signing/associated-domain setup, and a broker deployment with its secret stored server-side. None has been created or accessed by this prototype. No account credentials, existing tokens, or Keychain entries were read.
+The user supplied developer-owned OAuth Client ID `Ov23lit2u709b0ZDyGxQ` during M0. The development contract uses the repository homepage and `http://127.0.0.1:49152/oauth/callback`, with wildcard matching disabled. Actual callback registration and live exchange remain to be verified. No account credentials, existing tokens, or Keychain entries were read by this work.
+
+The [local harness](../scripts/m0/oauth.py) accepts the secret through a hidden interactive prompt, opens browser authorization with state and S256 PKCE, checks identity/repository/notification reads, rotates tokens when supported and attempts to revoke its test token. Two passing [synthetic tests](../scripts/m0/test-oauth.py) cover callback rejection/replay, lifecycle cleanup and output redaction. Credentials remain in process memory. This harness has no live result yet. It does not establish signed native callback, private/organization permissions, inbox mutations or two-account isolation. See the [setup and acceptance audit](M0-FEASIBILITY.md).
+
+Production authentication still needs the selected callback/domain configuration, Apple signing/associated-domain setup where applicable, and broker deployment/ownership if the proposed confidential exchange architecture is adopted. The distributed app never receives the developer-owned client secret.
 
 DISC-02 remains open until a registered-app test records:
 

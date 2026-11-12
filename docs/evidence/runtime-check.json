@@ -1,0 +1,23 @@
+{
+  "git": "git version 2.56.1",
+  "lfs": "git-lfs/3.8.1 (GitHub; darwin arm64; go 1.27.3; git a662a6db)",
+  "passed": [
+    "relocated Git executable",
+    "LFS helper discovery",
+    "SSH commit signing",
+    "SSH tag signing",
+    "signature verification",
+    "LFS pointer creation",
+    "local bare-remote push",
+    "clone and LFS content retrieval",
+    "LFS fsck",
+    "Git fsck"
+  ],
+  "limitations": [
+    "local transport",
+    "ephemeral SSH signing key",
+    "no SSH agent or GPG",
+    "no authenticated HTTPS/SSH remote",
+    "no clean-Mac or notarization proof"
+  ]
+}

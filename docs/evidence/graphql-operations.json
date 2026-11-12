@@ -1,0 +1,1895 @@
+{
+  "schema_sha256": "46f1d455d72ab784c6cb2b86e9b023df195dcfd2ed92099108b0faa5faa5d1fc",
+  "fields": [
+    {
+      "root": "Query",
+      "field": "codeOfConduct",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "codesOfConduct",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "enterprise",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "enterpriseAdministratorInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "enterpriseAdministratorInvitationByToken",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "enterpriseMemberInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "enterpriseMemberInvitationByToken",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "id",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "license",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "licenses",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "marketplaceCategories",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "marketplaceCategory",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "marketplaceListing",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "marketplaceListings",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "meta",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "node",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "nodes",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "organization",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "rateLimit",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "relay",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "repository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "repositoryOwner",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "resource",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "search",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "securityAdvisories",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "securityAdvisory",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "securityVulnerabilities",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "sponsorables",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "topic",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "user",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Query",
+      "field": "viewer",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "abortQueuedMigrations",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "abortRepositoryMigration",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "acceptEnterpriseAdministratorInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "acceptEnterpriseMemberInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "acceptTopicSuggestion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "accessUserNamespaceRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addAssigneesToAssignable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addBlockedBy",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addCloseIssueReferences",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addDiscussionComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addDiscussionPollVote",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addEnterpriseOrganizationMember",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addEnterpriseSupportEntitlement",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addLabelsToLabelable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addProjectCard",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addProjectColumn",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addProjectV2DraftIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addProjectV2ItemById",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addPullRequestCreationCapBypassUsers",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addPullRequestReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addPullRequestReviewComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addPullRequestReviewThread",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addPullRequestReviewThreadReply",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addReaction",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addRelatesTo",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addStar",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addSubIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addUpvote",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "addVerifiableDomain",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "applyPendingIssueSuggestions",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "approveDeployments",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "approveVerifiableDomain",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "archiveProjectV2Item",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "archivePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "archiveRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "cancelEnterpriseAdminInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "cancelEnterpriseMemberInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "cancelSponsorship",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "changeUserStatus",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "clearLabelsFromLabelable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "clearProjectV2ItemFieldValue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "cloneProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "cloneTemplateRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "closeDiscussion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "closeIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "closePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "convertProjectCardNoteToIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "convertProjectV2DraftIssueItemToIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "convertPullRequestToDraft",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "copyProjectV2",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createAttributionInvitation",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createBranchProtectionRule",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createCheckRun",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createCheckSuite",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createCommitOnBranch",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createDeployment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createDeploymentStatus",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createDiscussion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createEnterpriseOrganization",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createEnvironment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createIpAllowListEntry",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createIssueField",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createIssueFieldValue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createIssueType",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createLabel",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createLinkedBranch",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createMigrationSource",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createProjectV2",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createProjectV2Field",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createProjectV2IssueField",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createProjectV2StatusUpdate",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createProjectV2View",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createPullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createRef",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createRepositoryCustomProperty",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createRepositoryRuleset",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createSponsorsListing",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createSponsorsTier",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createSponsorship",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createSponsorships",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "createUserList",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "declineTopicSuggestion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteBranchProtectionRule",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteDeployment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteDiscussion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteDiscussionComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteEnvironment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteIpAllowListEntry",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteIssueComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteIssueField",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteIssueFieldValue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteIssueType",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteLabel",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteLinkedBranch",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deletePackageVersion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectCard",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectColumn",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectV2",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectV2Field",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectV2Item",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectV2StatusUpdate",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectV2View",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteProjectV2Workflow",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deletePullRequestReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deletePullRequestReviewComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteRef",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteRepositoryCustomProperty",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteRepositoryRuleset",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteUserList",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "deleteVerifiableDomain",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "dequeuePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "disablePullRequestAutoMerge",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "dismissPullRequestReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "dismissRepositoryVulnerabilityAlert",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "enablePullRequestAutoMerge",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "enqueuePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "followOrganization",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "followUser",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "grantEnterpriseOrganizationsMigratorRole",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "grantMigratorRole",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "importProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "inviteEnterpriseAdmin",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "inviteEnterpriseMember",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "linkProjectV2ToRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "linkProjectV2ToTeam",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "linkRepositoryToProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "lockLockable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "markDiscussionCommentAsAnswer",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "markFileAsViewed",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "markProjectV2AsTemplate",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "markPullRequestReadyForReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "mergeBranch",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "mergePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "minimizeComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "moveProjectCard",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "moveProjectColumn",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "pinEnvironment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "pinIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "pinIssueComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "promoteRepositoryCustomProperty",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "publishSponsorsTier",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "regenerateEnterpriseIdentityProviderRecoveryCodes",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "regenerateVerifiableDomainToken",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "rejectDeployments",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "rejectPendingIssueSuggestions",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeAssigneesFromAssignable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeBlockedBy",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeCloseIssueReferences",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeEnterpriseAdmin",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeEnterpriseIdentityProvider",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeEnterpriseMember",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeEnterpriseOrganization",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeEnterpriseSupportEntitlement",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeLabelsFromLabelable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeOutsideCollaborator",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removePullRequestCreationCapBypassUsers",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeReaction",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeRelatesTo",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeStar",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeSubIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "removeUpvote",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "reopenDiscussion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "reopenIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "reopenPullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "reorderEnvironment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "replaceActorsForAssignable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "reprioritizeSubIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "requestCopilotCodeReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "requestReviews",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "requestReviewsByLogin",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "rerequestCheckSuite",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "rerequestReviews",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "resolveReviewThread",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "retireSponsorsTier",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "revertPullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "revokeEnterpriseOrganizationsMigratorRole",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "revokeMigratorRole",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "setEnterpriseIdentityProvider",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "setIssueFieldValue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "setOrganizationInteractionLimit",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "setRepositoryCustomPropertyValues",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "setRepositoryInteractionLimit",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "setUserInteractionLimit",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "startOrganizationMigration",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "startRepositoryMigration",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "submitPullRequestReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "transferEnterpriseOrganization",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "transferIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unarchiveProjectV2Item",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unarchivePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unarchiveRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unfollowOrganization",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unfollowUser",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unlinkProjectV2FromRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unlinkProjectV2FromTeam",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unlinkRepositoryFromProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unlockLockable",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unmarkDiscussionCommentAsAnswer",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unmarkFileAsViewed",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unmarkIssueAsDuplicate",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unmarkProjectV2AsTemplate",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unminimizeComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unpinIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unpinIssueComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "unresolveReviewThread",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateBranchProtectionRule",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateCheckRun",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateCheckSuitePreferences",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateDiscussion",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateDiscussionComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseAdministratorRole",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseAllowPrivateRepositoryForkingSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseCopilotCodeReviewPolicy",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseDefaultRepositoryPermissionSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseDeployKeySetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanChangeRepositoryVisibilitySetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanCreateRepositoriesSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanDeleteIssuesSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanDeleteRepositoriesSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanInviteCollaboratorsSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanMakePurchasesSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanUpdateProtectedBranchesSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseMembersCanViewDependencyInsightsSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseOrganizationProjectsSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseOwnerOrganizationRole",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseProfile",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseRepositoryProjectsSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseTwoFactorAuthenticationDisallowedMethodsSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnterpriseTwoFactorAuthenticationRequiredSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateEnvironment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIpAllowListEnabledSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIpAllowListEntry",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIpAllowListForInstalledAppsEnabledSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIpAllowListUserLevelEnforcementEnabledSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIssueComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIssueField",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIssueFieldValue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIssueIssueType",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateIssueType",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateLabel",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateNotificationRestrictionSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateOrganizationAllowPrivateRepositoryForkingSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateOrganizationCopilotCodeReviewPolicy",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateOrganizationCopilotCodeReviewRunnerConfiguration",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateOrganizationCopilotCodeReviewSettings",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateOrganizationWebCommitSignoffSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updatePatreonSponsorability",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProject",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectCard",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectColumn",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2Collaborators",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2DraftIssue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2Field",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2ItemFieldValue",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2ItemPosition",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2StatusUpdate",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateProjectV2View",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updatePullRequest",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updatePullRequestBranch",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updatePullRequestReview",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updatePullRequestReviewComment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRef",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRefs",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRepositoryCopilotCodeReviewSettings",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRepositoryCustomProperty",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRepositoryRuleset",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateRepositoryWebCommitSignoffSetting",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateSponsorshipPreferences",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateSubscription",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateTeamReviewAssignment",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateTeamsRepository",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateTopics",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateUserList",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "updateUserListsForItem",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    },
+    {
+      "root": "Mutation",
+      "field": "verifyVerifiableDomain",
+      "coverage": "unverified",
+      "capability": "CAP-34; manual triage required"
+    }
+  ]
+}

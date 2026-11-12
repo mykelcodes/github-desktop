@@ -6,3 +6,4 @@ DerivedData/
 xcuserdata/
 .vscode/
 .idea/
+__pycache__/

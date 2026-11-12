@@ -8,7 +8,7 @@ struct WorkspaceView: View {
     var body: some View {
         NavigationSplitView {
             VStack(spacing: 0) {
-                List(selection: Binding(get: { workspace.selectedID }, set: workspace.select)) {
+                List(selection: Binding(get: { workspace.selectedID }, set: { workspace.select($0) })) {
                     Section("Local Folders") {
                         ForEach(workspace.folders) { folder in
                             Label {
