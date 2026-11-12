@@ -1,0 +1,39 @@
+name: macOS
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: macos-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+    timeout-minutes: 20
+    env:
+      DEVELOPER_DIR: /Applications/Xcode_16.4.app/Contents/Developer
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Show toolchain
+        run: |
+          swift --version
+          xcodebuild -version
+          git --version
+      - name: Test
+        run: ./scripts/test.sh
+      - name: Build development app
+        run: ./scripts/build-app.sh release
+      - name: Archive app
+        run: ditto -c -k --keepParent ".build/app/Git Workspace.app" .build/GitWorkspace-prototype.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: GitWorkspace-macos-prototype
+          path: .build/GitWorkspace-prototype.zip
+          if-no-files-found: error
